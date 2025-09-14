@@ -21,7 +21,7 @@ const App = () => {
         setData(jsonData);
         setLoading(false);
       } catch (e) {
-        console.error("failed to fetch data:", e);
+        window.alert('failed to fetch data');
         setError(true);
         setLoading(false);
       }
