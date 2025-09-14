@@ -21,7 +21,7 @@ const App = () => {
         setData(jsonData);
         setLoading(false);
       } catch (e) {
-        console.error("Failed to fetch data:", e);
+        console.error("failed to fetch data:", e);
         setError(true);
         setLoading(false);
       }
@@ -52,7 +52,7 @@ const App = () => {
   }
 
   if (error) {
-    return <div className="error-message">Failed to fetch data</div>;
+    return <div className="error-message">failed to fetch data</div>;
   }
 
   return (
